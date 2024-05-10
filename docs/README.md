@@ -1,3 +1,2 @@
 
-
-<p>My cat is <strong>very</strong> grumpy.</p>
+<p>This is<strong>placeholder</strong> text.</p>
