@@ -1,5 +1,0 @@
-<head>
-  <meta http-equiv='refresh' content='0; href=people-search.html'>
-</head>
-
-
