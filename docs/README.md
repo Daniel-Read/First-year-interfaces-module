@@ -1,2 +1,0 @@
-
-<p>This is<strong>placeholder</strong> text.</p>

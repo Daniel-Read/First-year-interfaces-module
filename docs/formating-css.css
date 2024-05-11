@@ -1,0 +1,85 @@
+.header 
+{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-top:    1px solid;
+    border-right:  1px solid; 
+    border-left: 1px solid;
+  }
+
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-bottom:    1px solid;
+    border-right:  1px solid; 
+    border-left: 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap; /* assumes you only want one row */
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 1px solid;
+}
+
+li a:hover:not(.active) {
+    background-color: #00d9ff;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+
+.container {
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .sidebar {
+    position: absolute;
+    margin-top: 1vw;
+    width: 20vw;
+    border: 1px solid;
+
+  }
+  
+  .main {
+    margin-left: 20.5vw;
+    margin-top: 1vw;
+    border: 1px solid;
+
+  }
+  
+
+
+
+  
+
+  /*
+
+  body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+  }
+  */
