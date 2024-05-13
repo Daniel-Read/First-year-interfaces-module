@@ -7,25 +7,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <h1>Add a Vehicle</h1>
-    </div>
+ 
 
-<ul>
-    <li><a href="people-search.html">People Search</a></li>
-    <li><a href="vehicle-search.html">Vehicle Search</a></li>
-    <li><a class="active" href="add-vehicle.html">Add a vehicle</a></li>
-</ul>
+<nav>
+    <ul>
+        <li><a href="people-search.html">People Search</a></li>
+        <li><a href="vehicle-search.html">Vehicle Search</a></li>
+        <li><a class="active" href="add-vehicle.html">Add a vehicle</a></li>
+    </ul>
+</nav>
+
+</header>
 
 
-<div class="sidebar">
+<aside class="sidebar">
+    <img src="images/logo.JPG" alt="theatre logo">
+</aside>
 
-<h1>This is a heading</h1>
-</div>
-<div class = "main">
-<p>This is a paragraph.</p>
-</div>
 
+
+
+<main class = "main">
+    <form id="addvehicleform">
+        <label for="rego">registration (plate) number</label>
+        <input type="text" id="rego" name="rego"><br><br>
+        <label for="make">Make</label>
+        <input type="text" id="make" name="make"><br><br>
+        <label for="model">Model</label>
+        <input type="text" id="model" name="model"><br><br>
+        <label for="colour">Colour</label>
+        <input type="text" id="colour" name="colour"><br><br>
+        <label id="ownerlabel" for="owner">Owners Name</label>
+        <select id="ddowner">
+        </select>
+        <input hidden type="text" id="owner" name="owner"><br><br>
+
+        <label hidden id="owneraddresslabel" for="owner">Owners Address</label>
+        <input hidden type="text" id="owneraddress" name="owneraddress"><br><br>
+
+        <label hidden id="ownerdoblabel" for="owner">Owners DOB</label>
+        <input hidden type="text" id="ownerdob" name="ownerdob"><br><br>
+
+        <label hidden id="ownernumberlabel" for="owner">Owners Licence Number</label>
+        <input hidden type="text" id="ownernumber" name="ownernumber"><br><br>
+
+        <label hidden id="ownerexdatelabel" for="owner">Owners ExpiryDate</label>
+        <input hidden type="text" id="ownerexdate" name="ownerexdate"><br><br>
+
+        <button id="addvehiclesubmit">Submit</button>
+      </form>
+<p id="add_successfull" hidden>Successfully Added</p>
+
+<p id="results"></p>
+</main>
+
+
+<footer class="footer">
+    <p>COMP1004 coursework by Daniel Read</p>
+</footer>
+
+<script type="module" src="javascript.js"></script>
 </body>
 </html>
 

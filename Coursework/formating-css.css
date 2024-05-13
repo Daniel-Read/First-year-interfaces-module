@@ -2,22 +2,18 @@
 {
     background-color: #ffffff;
     text-align: center;
-    padding: 20px;
-    border-top:    1px solid;
-    border-right:  1px solid; 
-    border-left: 1px solid;
+    padding: 10px; 
+    margin: 10px; 
+    border: 1px solid;
   }
 
   
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
     overflow: hidden;
     background-color: #ffffff;
-    border-bottom:    1px solid;
-    border-right:  1px solid; 
-    border-left: 1px solid;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -32,9 +28,14 @@ li a {
     display: inline-block;
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px;
     text-decoration: none;
     border: 1px solid;
+    ul {
+    list-style-type: none;
+    margin: 10px;
+
+    }
 }
 
 li a:hover:not(.active) {
@@ -47,30 +48,72 @@ li a:hover:not(.active) {
 
 
 .container {
-    min-height: 100vh;
-    position: relative;
+    float:  left;
+    height: 70vh;
+    position: inline;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
   }
   
   .sidebar {
+    
     position: absolute;
-    margin-top: 1vw;
-    width: 20vw;
+    height: 70vh;
+    margin: 10px;
+    padding: 10px;
+    
+    width: 18%;
     border: 1px solid;
 
   }
   
   .main {
-    margin-left: 20.5vw;
-    margin-top: 1vw;
+    
+    float: right;
+    position: inline;
+
+    margin:10px;
+    padding:10px;
+    height: 70vh;
+    width: 78%;
+    border: 1px solid;
+
+
+  }
+
+  .footer {
+    position: fixed;
+    height: 5vh;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    text-align: center;
     border: 1px solid;
 
   }
-  
+
+.result
+{
+  border: 1px solid;
+  position: relative;
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+
+}
 
 
-
-  
-
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .container.sidebar {
+    width:100%;
+  }
+  .container.main {
+    width: 100%;
+  }
+}
   /*
 
   body {

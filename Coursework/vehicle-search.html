@@ -7,30 +7,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <h1>Vehicle Search</h1>
-    </div>
-
-<ul>
-    <li><a href="people-search.html">People Search</a></li>
-    <li><a class="active" href="vehicle-search.html">Vehicle Search</a></li>
-    <li><a href="add-vehicle.html">Add a vehicle</a></li>
-</ul>
 
 
-<div class="sidebar">
+<nav>
+    <ul>
+        <li><a href="people-search.html">People Search</a></li>
+        <li><a class="active" href="vehicle-search.html">Vehicle Search</a></li>
+        <li><a href="add-vehicle.html">Add a vehicle</a></li>
+    </ul>
+</nav>
+</header>
 
-<h1>This is a heading</h1>
-</div>
 
 
-<div class = "main">
-<p>This is a paragraph.</p>
-</div>
+<aside class="sidebar">
+    <img src="images/logo.JPG" alt="theatre logo">
+</aside>
 
 
 
 
+<main class = "main">
+    <form id="vehicleform">
+        <label for="rego">vehicle registration (plate) number</label>
+        <input type="text" id="rego" name="rego"><br><br>
+        <button id="vehiclesubmit">Submit</button>
+      </form>
+<p id="search_successfull" hidden>Search Successfull</p>
+
+<p id="results"></p>
+</main>
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <p>COMP1004 coursework by Daniel Read</p>
+</footer>
+
+<script type="module" src="javascript.js"></script>
 </body>
 </html>
 
